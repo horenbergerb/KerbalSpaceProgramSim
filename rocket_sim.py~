@@ -1,0 +1,20 @@
+
+air_res = 1.0
+surf_area = 1.0
+
+init_r = 0.0
+r = init_r
+init_r_vel = 0.0
+r_vel = init_r_vel
+init_r_acc = 0.0
+r_acc = init_r_acc
+init_t = 0.0
+t = init_t
+
+
+def thrust_func(t):
+    return 1
+
+def partial_deriv((r, r_vel, r_acc, t), t0):
+    return [thrust_func(t)+.5*air_res*surf_area*
+    r''(t) = (1.0/(m-t*c*thrust_func(t)))((((m-t*c*thrust_func(t))*k)/r)+c+.5*r*p*e^(-1.0*r+s)*A*(r_acc)^2) 

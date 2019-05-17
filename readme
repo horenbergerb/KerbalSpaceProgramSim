@@ -1,0 +1,10 @@
+This is a differential equation built to approximately model launches and orbits surrounding Kerbin in the game Kerbal Space Program.
+The model itself is fairly well-commented, so dig in. There are some variables which must be ballparked at the current time (Temp function and air resistance), and there are factors which are ignored. However, Euler approximation provides moderate-quality short-term approximations, and this tool is valuable for practical use.
+
+Future goals:
+Implement steps in which short segments of a trip can be planned, and then the program can be reinitialized with the true final values of the previous segment. This would be a practical design for use in real launches.
+Implement Range-Kutta (Or however it's spelled) I would be interested to know how much this affects accuracy, but I'll probably not be able to know this until variables are all tuned in, leading to our final big goal:
+Make variables more accurate
+
+Fun topics:
+Does this diff eq have an analytic solution? I'm using an approximation method, but I have reason to believe there exists a formulaic solution to this equation. However, I'm not qualified to make that judgement, and it's likely there is no solution.
